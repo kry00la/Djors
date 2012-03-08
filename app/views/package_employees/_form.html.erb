@@ -1,0 +1,19 @@
+<%= form_for([package,package_employee]) do |f| %>
+  <% if @package_employee.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@package_employee.errors.count, "error") %> prohibited this package_employee from being saved:</h2>
+
+      <ul>
+      <% @package_employee.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <%= f.label :employee ,"Employee"%>
+  <%= f.collection_select :employee_id, Employee.all,:id,:name,:prompt => true%>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

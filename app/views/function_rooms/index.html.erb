@@ -1,0 +1,29 @@
+<h1>Listing function_rooms</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Status</th>
+    <th>Capacity</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @function_rooms.each do |function_room| %>
+  <tr>
+    <td><%= function_room.name %></td>
+    <td><%= function_room.price %></td>
+    <td><%= function_room.status %></td>
+    <td><%= function_room.capacity %></td>
+    <td><%= link_to 'Show', function_room %></td>
+    <td><%= link_to 'Edit', edit_function_room_path(function_room) %></td>
+    <td><%= link_to 'Destroy', function_room, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Function room', new_function_room_path %>

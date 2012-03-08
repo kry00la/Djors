@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @reservation.name %>
+</p>
+
+<p>
+  <b>Contact:</b>
+  <%= @reservation.contact %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @reservation.email %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @reservation.date %>
+</p>
+
+<p>
+  <%= link_to "add functionrooms", new_reservation_reserve_function_room_path(@reservation) %>
+
+</p>
+
+<p>
+  <b>Timestart:</b>
+  <%= @reservation.timeStart %>
+</p>
+
+<p>
+  <b>Timeend:</b>
+  <%= @reservation.timeEnd %>
+</p>
+
+<p>
+  <b>Numguest:</b>
+  <%= @reservation.numGuest %>
+</p>
+
+<p>
+  <b>Confirm:</b>
+  <%= @reservation.confirm %>
+</p>
+
+
+<%= link_to 'Edit', edit_reservation_path(@reservation) %> |
+<%= link_to 'Back', reservations_path %>

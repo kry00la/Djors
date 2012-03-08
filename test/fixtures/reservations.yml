@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  contact: 1
+  email: MyString
+  date: 2012-03-06
+  timeStart: 2012-03-06 23:58:05
+  timeEnd: 2012-03-06 23:58:05
+  numGuest: 1
+  confirm: false
+
+two:
+  name: MyString
+  contact: 1
+  email: MyString
+  date: 2012-03-06
+  timeStart: 2012-03-06 23:58:05
+  timeEnd: 2012-03-06 23:58:05
+  numGuest: 1
+  confirm: false
