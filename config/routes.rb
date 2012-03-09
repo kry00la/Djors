@@ -3,6 +3,8 @@ Djors::Application.routes.draw do
 
 
 
+  resources :menu_types
+
   resources :employees
 
   resources :services

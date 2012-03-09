@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @menu_type.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @menu_type.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_menu_type_path(@menu_type) %> |
+<%= link_to 'Back', menu_types_path %>
